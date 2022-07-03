@@ -55,14 +55,115 @@
 // withdraw(100, 300); // "Операція зняття коштів проведена"
 
 
-function calculateEngravingPrice(message, pricePerWord) {
-   // Change code below this line
-    let array = message.split(" ");
-let price = array.lenghts * pricePerWord;
+//
 
-return price;
+// task
 
-   // Change code above this line
+
+// Напиши функцію calculateTotal(number),
+//    яка приймає ціле число(параметр number) і повертає суму всіх цілих чисел від одиниці і
+//     до цього числа.Наприклад, якщо number дорівнює 3, то сума - це 1 + 2 + 3, тобто 6.
+
+
+
+// function calculateTotal(number) {
+//  // Change code below this line
+// let total = 0;
+// for (let i = 0; i <= number; i += 1) {
+//   total+=i;
+// }
+// return total;
+//   // Change code above this line
+// }
+
+// console.log(calculateTotal(10));
+
+
+// function calculateTotalPrice(order) {
+//   let total = 0;
+//   // Change code below this line
+// for (let i = 0; i <= order; i += 1) {
+//   total += i;
+// }
+//   // Change code above this line
+//   return total;
+// }
+
+// console.log(calculateTotalPrice([164, 48, 291]))
+
+
+
+// function calculateTotal(number) {
+//  // Change code below this line
+// let total = 0;
+// for (let i = 0; i < number.lenght; i += 1) {
+//   total += number[i];
+// }
+// return total;
+//   // Change code above this line
+// }
+// console.log(calculateTotal(3))
+
+// function findLongestWord(string) {
+//   // Change code below this line
+
+// let array = string.split(" ");
+// for (let i = 0; i < array.length; i += 1) {
+//    if (array[i].length > array[i + 1].length)
+//       return array[i]
+// }
+//   // Change code above this line
+// }
+// console.log(findLongestWord("The quick brown fox jumped over the lazy dog"))
+
+// function createArrayOfNumbers(min, max) {
+//   const numbers = [];
+//   // Change code below this line
+//   for (let i = min; i >= max; i += 1) {
+//      numbers = numbers.push(i)
+//      console.log(i)
+//   }
+//   // Change code above this line
+//   return numbers;
+// }
+
+// console.log(createArrayOfNumbers(10, 15))
+
+
+
+// function filterArray(numbers, value) {
+//    // Change code below this line
+//   const newArray = [];
+//   for (let i = 0; i < numbers.length; i += 1) {
+//     if (numbers[i] > value)
+//     return numbers.push(i)
+//   }
+
+
+//   // Change code above this line
+// }
+// console.log(filterArray([12, 24, 8, 41, 76], 3))
+
+// const planets = ["Earth", "Mars", "Venus"];
+
+// console.log(planets.includes("Earth")); // true
+// console.log(planets.includes("Mars")); // true
+// console.log(planets.includes("Venus")); // true
+// console.log(planets.includes("Jupiter")); // false
+
+function getCommonElements(array1, array2) {
+  // Change code below this line
+
+  function getCommonElements(array1, array2) {
+  // Change code below this line
+const newArray = []
+for (let i = 0; i > array1.length && i > array2.length; i += 1) {
+  if ( array1.includes(i) && array2.includes(i)) {
+    newArray.push(i)
+  }
 }
 
-console.log(calculateEngravingPrice("JavaScript is in my blood", 20));
+return newArray
+ // Change code above this line
+   }
+console.log(getCommonElements([1, 2, 3], [2, 4]))
