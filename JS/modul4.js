@@ -134,14 +134,19 @@ const users =
 // const getUsersWithFriend = (users, friendName) => {
 //    return users.filter(user => user.friends.incledes(friendName))
 // };
-const getActiveUsers = (users) => {
-    users.filter(user => user.isActiv === true) 
-        return users.filter(user => user.name)
-    }
+// const getActiveUsers = (users) => {
+//     users.filter(user => user.isActiv === true) 
+//         return users.filter(user => user.name)
+//     }
    
 ;
 // Change code above this line
 
 // console.log(users.filter(user => user.name))
 
-
+// Change code below this line
+function sortByName(users) {
+    return [...users].sort((a, b) => a.name.localeCompare(b.name));
+}
+// Change code above this line
+console.log(sortByName)
